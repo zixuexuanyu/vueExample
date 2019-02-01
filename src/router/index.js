@@ -10,6 +10,7 @@ import pageSix from '@/pages/pageSix'
 import pageSeven from '@/pages/pageSeven'
 import numChange from '@/pages/numchange'
 import delAll from '@/pages/delAll'
+import news from '@/pages/news'
 
 Vue.use(Router)
 
@@ -63,6 +64,17 @@ export default new Router({
             path: '/delAll',
             name: 'delAll',
             component: delAll
+        },
+        {
+            path: '/news',
+            name: 'news',
+            component: news
+        },
+        {
+            path: '/delNum',
+            name: 'delNum',
+            component: () =>
+                import ('@/pages/delNum.vue'),
         }
     ]
 });

@@ -1,9 +1,14 @@
 <template>
     <div>
-        <!-- commit  触发函数的方法 -->
-        <button @click="$store.commit('reduce')">-</button>
-        <p>{{$store.state.num}}</p>
-        <button @click="$store.commit('add')">+</button>
+        <ul>
+            <li>
+                <!-- commit  触发函数的方法 -->
+                <button @click="$store.commit('reduce')">-</button>
+                <p>{{$store.state.num}}</p>
+                <button @click="$store.commit('add')">+</button>
+            </li>
+        </ul>
+        
     </div>
 </template>
  

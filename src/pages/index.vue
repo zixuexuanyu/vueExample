@@ -47,6 +47,16 @@
 					批量删除
 				</router-link>
 			</li>
+			<li>
+				<router-link :to="{name:'news'}" class="clear">
+					news
+				</router-link>
+			</li>
+			<li>
+				<router-link :to="{name:'delNum'}" class="clear">
+					批量删除并修改数量
+				</router-link>
+			</li>
 		</ul>
 	</div>
 </template>
