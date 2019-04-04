@@ -11,6 +11,9 @@ import pageSeven from '@/pages/pageSeven'
 import numChange from '@/pages/numchange'
 import delAll from '@/pages/delAll'
 import news from '@/pages/news'
+import page8 from '@/pages/page8'
+import vuepullto from '@/pages/vuepullto'
+import vuepulltoin from '@/pages/vuepulltoin'
 
 Vue.use(Router)
 
@@ -61,20 +64,29 @@ export default new Router({
             component: numChange
         },
         {
-            path: '/delAll',
-            name: 'delAll',
-            component: delAll
-        },
-        {
             path: '/news',
             name: 'news',
             component: news
         },
         {
-            path: '/delNum',
-            name: 'delNum',
-            component: () =>
-                import ('@/pages/delNum.vue'),
+            path: '/delAll',
+            name: 'delAll',
+            component: delAll
+        },
+        {
+            path: '/page8',
+            name: 'page8',
+            component: page8
+        },
+        {
+            path: '/vuepullto',
+            name: 'vuepullto',
+            component: vuepullto
+        },
+        {
+            path: '/vuepulltoin',
+            name: 'vuepulltoin',
+            component: vuepulltoin
         }
     ]
 });

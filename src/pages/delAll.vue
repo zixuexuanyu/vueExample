@@ -12,6 +12,7 @@
                 <p class="delall-p">{{item.name}}</p>
             </li>
         </ul>
+        <img v-for="img in imgs" :src="img"  alt="">
     </div>
 </template>
 <script>
@@ -38,7 +39,8 @@ export default {
                 selected: true
             }],
             checkboxShow:false,
-            delList:[]//批量删除集合
+            delList:[],//批量删除集合,
+            imgs:[require('../assets/img/a.jpg'),require('../assets/img/a.jpg')]
         }
     },
     methods:{
@@ -70,6 +72,9 @@ export default {
 }
 </script>
 <style scoped>
+img{
+    width: 50px;
+}
 .delall{
     padding: 0;
     margin: 0;

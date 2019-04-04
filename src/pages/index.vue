@@ -57,6 +57,26 @@
 					批量删除并修改数量
 				</router-link>
 			</li>
+			<li>
+				<router-link :to="{name:'uploadimg'}" class="clear">
+					上传图片
+				</router-link>
+			</li>
+			<li>
+				<router-link :to="{name:'page8'}" class="clear">
+					page8
+				</router-link>
+			</li>
+			<li>
+				<router-link :to="{name:'vuepullto'}" class="clear">
+					vuepullto
+				</router-link>
+			</li>
+			<li>
+				<router-link :to="{name:'vuepulltoin'}" class="clear">
+					vuepulltoin
+				</router-link>
+			</li>
 		</ul>
 	</div>
 </template>
@@ -74,7 +94,7 @@ ul.nav{
 }
 ul.nav>li{
 	padding: 0 15px;
-	line-height: 50px;
+	line-height: 30px;
 }
 ul.nav>li>.clear{
 	position: relative;
